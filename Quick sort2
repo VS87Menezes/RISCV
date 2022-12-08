@@ -1,15 +1,15 @@
-# A function that implements the quicksort algorithm.
-# Running time complexity:  amortised O(nlogn), worst case: O(n^2)
-# Running space complexity: O(nlogn), worst case: O(n)
+# Uma função que implementa o algoritmo quicksort.
+# Complexidade do tempo de execução: amortizado O(nlogn), pior caso: O(n^ 2 )
+# Complexidade do espaço de execução: O(nlogn), pior caso: O(n)
 #
-# quicksort(int arr[], int start, int end)
-# Requires: 'start' >= 0
+# quicksort(int arr[], int start, int end )
+# Requer: 'start' >= 0#
 #           'end' < length(arr)
 
 # MAIN
 addi sp, sp, 10000
-# Store array values in contiguous memory at mem address 0x0:
-# {10, 80, 30, 90, 40, 50, 70}
+# Armazena valores de matriz na memória contígua no endereço de memória 0x0:
+# { 10 , 80 , 30 , 90 , 40 , 50 , 70 }
  addi a0, x0, 0
 
  addi t0, x0, 10
