@@ -6,6 +6,8 @@
 # Requer: 'start' >= 0#
 #           'end' < length(arr)
 
+
+
 # MAIN
 addi sp, sp, 10000
 # Armazena valores de matriz na memória contígua no endereço de memória 0x0:
