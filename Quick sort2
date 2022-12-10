@@ -36,16 +36,19 @@ jal ra, QUICKSORT
 jal ra, EXIT
 
 QUICKSORT:
+
+#declaração de variaveis locais
 addi sp, sp, -20
-sw ra, 16(sp)
-sw s3, 12(sp)
-sw s2, 8(sp)
-sw s1, 4(sp)
-sw s0, 0(sp)
+sw ra, 16(sp)  #-> guarda o valor de ra (endereço de retorno) na pilha
+sw s3, 12(sp)  #-> guarda (reserva) o valor de s3 na pilha
+sw s2, 8(sp)   #-> guarda (reserva) o valor de s2 na pilha
+sw s1, 4(sp)   #-> guarda (reserva) o valor de s1 na pilha
+sw s0, 0(sp)   #-> guarda (reserva) o valor de s0 na pilha
 
 addi s0, a0, 0
 addi s1, a1, 0
 addi s2, a2, 0
+
 BLT a2, a1, START_GT_END
 
 jal ra, PARTITION
