@@ -1,15 +1,94 @@
-# Uma função que implementa o algoritmo quicksort.
-# Complexidade do tempo de execução: amortizado O(nlogn), pior caso: O(n^ 2 )
-# Complexidade do espaço de execução: O(nlogn), pior caso: O(n)
-#
-# quicksort(int arr[], int start, int end )
-# Requer: 'start' >= 0#
-#           'end' < length(arr)
+addi sp, sp, 20
+sw ra, 16(sp)
+
+
+addi a0, x0, 0
+
+lui t0, 15
+srli t0, t0, 12
+sw t0, 0(a0)
+
+lui t0, 1022
+srli t0, t0, 12
+sw t0, 4(a0)
+
+lui t0, 768
+srli t0, t0, 12
+sw t0, 8(a0)
+
+lui t0, 230
+srli t0, t0, 12
+sw t0, 12(a0)
+
+lui t0, 9281
+srli t0, t0, 12
+sw t0, 16(a0)
+
+lui t0, 341
+srli t0, t0, 12
+sw t0, 20(a0)
+
+lui t0, 203
+srli t0, t0, 12
+sw t0, 24(a0)
+
+lui t0, 92849
+srli t0, t0, 12
+sw t0, 28(a0)
+
+lui t0, 983
+srli t0, t0, 12
+sw t0, 32(a0)
+
+lui t0, 140
+srli t0, t0, 12
+sw t0, 36(a0)
+
+lui t0, 1233
+srli t0, t0, 12
+sw t0, 40(a0)
+
+lui t0, 9271
+srli t0, t0, 12
+sw t0, 44(a0)
+
+lui t0, 8412
+srli t0, t0, 12
+sw t0, 48(a0)
+
+lui t0, 6736
+srli t0, t0, 12
+sw t0, 52(a0)
+
+lui t0, 5629
+srli t0, t0, 12
+sw t0, 56(a0)
+
+lui t0, 235
+srli t0, t0, 12
+sw t0, 60(a0)
+
+lui t0, 635
+srli t0, t0, 12
+sw t0, 64(a0)
+
+lui t0, 424
+srli t0, t0, 12
+sw t0, 68(a0)
+
+lui t0, 8291
+srli t0, t0, 12
+sw t0, 72(a0)
+
+lui t0, 3
+srli t0, t0, 12
+sw t0, 76(a0)
 
 
 
-# MAIN
-addi sp, sp, 10000
+
+
+addi sp, sp, 2047
 # Armazena valores de matriz na memória contígua no endereço de memória 0x0:
 # { 10 , 80 , 30 , 90 , 40 , 50 , 70 }
  addi a0, x0, 0
